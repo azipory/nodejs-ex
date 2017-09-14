@@ -17,6 +17,6 @@ node('nodejs') {
     openshiftVerifyDeployment(deploymentConfig: 'nodejs-ex')
 
   stage 'tag'
-    openshiftTag(namespace: currproject, sourceStream: 'nodejs-ex', sourceTag: 'latest', destinationNamespace: currproject, destinationStream: 'nodejs-ex', destinationTag: 'noelotest')
+    openshiftTag(namespace: currproject, sourceStream: 'nodejs-ex', sourceTag: 'latest', destinationNamespace: currproject, destinationStream: 'nodejs-ex', destinationTag: 'amirtest')
 
 }
